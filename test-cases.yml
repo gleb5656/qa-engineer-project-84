@@ -6,7 +6,6 @@
   prerequisites: |
     Открыта страница выбора товаров 
   test-data: |
-    Тестовые данные
     Поле Search = Iphone
   steps:
     - Вводим "Iphone" в поле "Search"
@@ -20,7 +19,6 @@
   prerequisites: |
     Открыта страница выбора товаров
   test-data: |
-    Тестовые данные
     Category = smartphones Параметры Price From 700 to 1190
   steps:
     - Ставим в нижнюю границу цены 700
@@ -35,8 +33,7 @@
   prerequisites: |
     Открыта страница каталога  
   test-data: |
-    Тестовые данные
-    ---------------
+ ---------------
   steps:
     - Добавляем в корзину 1 "Iphone X"
     - Переходим в корзину
