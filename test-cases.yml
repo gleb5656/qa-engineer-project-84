@@ -45,7 +45,7 @@
   prerequisites: |
     Открыта страница каталога
   test-data: |
-    Отсутствует
+    Cart = Iphone 9
   steps:
     - Нажимаем на "Add to cart" в окне Iphone 9
     - Нажимаем кнопку "Cart"
@@ -59,7 +59,7 @@
   prerequisites: |
     Открыта страница каталога
   test-data: |
-    Отсутствует
+    Cart = Iphone 9
   steps:
     - Нажимаем на окно "Iphone 9" в каталоге
   expected-result: |
