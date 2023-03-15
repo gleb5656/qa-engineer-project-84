@@ -1,5 +1,6 @@
+---
 test-cases:
-  - summary: |
+- summary: |
       Успешный поиск товаров по ключевому слову 
     status: pass 
     ---
