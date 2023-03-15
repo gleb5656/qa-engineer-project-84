@@ -1,9 +1,9 @@
 ---
 # с помощью символа # создаются комментарии, чтобы что-то пояснить
-name: Gleb Semiletov # ваше имя
+name: Ilona Maskova # ваше имя
 job: QA Engineer
 level: junior
-email: gleb.semiletov@mail.ru
+email: ilona@hexlet.io
 description: |
   Это текст-описание в свободной форме. Здесь можно рассказать пару интересных фактов про себя
 
