@@ -1,10 +1,10 @@
 ---
 node_modules
 # с помощью символа # создаются комментарии, чтобы что-то пояснить
-name: Gleb Semiletoм
+name: Gleb Semiletov
 job: QA Engineer
 level: junior
-email: ilona@hexlet.io
+email: gleb.semiletov@mail.ru
 description: |
   Это текст-описание в свободной форме. Здесь можно рассказать пару интересных фактов про себя
 
