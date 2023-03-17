@@ -1,66 +1,81 @@
 ---
 - summary: |
     Проверка поиска товаров по ключевому слову 
-  requirement: |
+requirement: |
     При вводе ключевого слова пользователь должен видеть в каталоге соответствующий ключевому слову товар
-  prerequisites: |
+prerequisites: |
     Открыта страница каталога
-  test-data: |
+test-data: |
     Search = Iphone
-  steps:
+steps:
     - Вводим "Iphone" в поле "Search"
-  expected-result: |
+expected-result: |
     Пользователь должен увидеть в каталоге товаров только модели Iphone
     
 - summary: |
     Проверка поиска товаров по категории
-  requirement: |
+requirement: |
     При использовании поиска товаров по категории результат в каталоге должен отображаться корректно
-  prerequisites: |
+prerequisites: |
     Открыта страница каталога
-  test-data: |
+test-data: |
     Category = smartphones 
-  steps:
+steps:
     - Ставим категорию "Smartphones"
-  expected-result: |
+expected-result: |
     Пользователь должен увидеть в каталоге товаров только смартфоны
     
 - summary: |
     Проверка фильтра товара по цене
-  requirement: |
+requirement: |
     При использовании фильтра товара по цене результат в каталоге должен отображаться корректно
-  prerequisites: |
+prerequisites: |
     Открыта страница каталога
-  test-data: |
+test-data: |
     Pricefrom = 1000 Priceto = 5000
-  steps:
+steps:
     - Устанавливаем фильтр цены от 1000$ до 5000$
-  expected-result: |
+expected-result: |
     Пользователь должен увидеть в каталоге товаров только товары дороже 1000$ и дешевле 5000$
     
 - summary: |
     Проверка добавления товаров в корзину
-  requirement: |
+requirement: |
     При добавлении товара в корзину он должен отображаться корректно
-  prerequisites: |
+prerequisites: |
     Открыта страница каталога
-  test-data: |
+test-data: |
     Cart = Iphone 9
-  steps:
+steps:
     - Нажимаем на "Add to cart" в окне Iphone 9
     - Нажимаем кнопку "Cart"
-  expected-result: |
+expected-result: |
     Пользователь должен увидеть в корзине 1 единицу товара "Iphone 9" по цене 477.85$
     
 - summary: |
     Проверка просмотра описания товара 
-  requirement: |
+requirement: |
     Пользователь должен иметь возможность просматривать описание товара
-  prerequisites: |
+prerequisites: |
     Открыта страница каталога
-  test-data: |
+test-data: |
     Cart = Iphone 9
-  steps:
+steps:
     - Нажимаем на окно "Iphone 9" в каталоге
-  expected-result: |
+expected-result: |
     Пользователя должно перевести на страницу описания товара "Iphone 9"
+    
+- summary: |
+     Проверка работы фильтров при переходе из каталога в окно описания товаров и обратно в каталог
+requirement: |
+    Фильтры при переходе к описанию товара и возвращении в каталог не должны сбрасываться 
+prerequisites: |
+    Открыта страница каталога
+test-data: |
+    Cart = Iphone 9
+steps:
+    - Выбрать в фильтре по бренду "Apple"
+    - Нажимаем на окно "Iphone 9" в каталоге
+    - Нажимаем на кнопку "Store" на странице описания товара 
+expected-result: |
+    После выполнения шагов фильтры не должны сброситься
